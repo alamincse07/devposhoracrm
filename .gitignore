@@ -22,6 +22,7 @@ Thumbs.db
 .history
 **/runtime
 
+# not include assets
 **/web/assets
 # composer itself is not needed
 composer.phar

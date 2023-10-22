@@ -58,10 +58,10 @@ return [
        
 		
 		'urlManager' => [
-        'enablePrettyUrl' => false,
-        'showScriptName' => false,
-		'baseUrl' => '/admin',
-		
+            'enablePrettyUrl' => false,
+            'showScriptName' => false,
+            'baseUrl' => '/admin',
+            
 		],
 		'urlManagerFrontEnd' => [
             'class' => 'yii\web\urlManager',

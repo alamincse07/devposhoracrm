@@ -14,14 +14,12 @@ return [
     'controllerNamespace' => 'frontend\controllers',
 	/*'homeUrl' => '/advanced',*/
     'components' => [
-        /*'request' => [
-            'csrfParam' => '_csrf-frontend',
-			'baseUrl' => '/advanced',
-        ],*/
+
 		'request'=>[
             'class' => 'common\components\Request',
             'web'=> '/frontend/web',
             'baseUrl' => '',
+            'csrfParam' => '_csrf-frontend',
 		],
         'user' => [
             'identityClass' => 'common\models\User',

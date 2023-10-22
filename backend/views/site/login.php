@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-$this->title = 'Login';
+$this->title = 'Admin Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
@@ -54,9 +54,6 @@ $this->params['breadcrumbs'][] = $this->title;
   </div>
   <!-- /.login-box-body -->
 </div>
-        
-        
-        
-        
+     
     </div>
 </div>

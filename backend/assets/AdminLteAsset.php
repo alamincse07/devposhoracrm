@@ -24,7 +24,7 @@ class AdminLteAsset extends AssetBundle
         'plugins/jvectormap/jquery-jvectormap-1.2.2.min.js',
         'plugins/jvectormap/jquery-jvectormap-world-mill-en.js',
         'plugins/slimScroll/jquery.slimscroll.min.js',
-
+    // do u need below js?
     //    'plugins/chartjs/Chart.min.js',
     //     'js/pages/dashboard2.js',
     ];

@@ -7,6 +7,7 @@ class Request extends \yii\web\Request {
     public $web;
     public $adminUrl;
 
+    // removed additional /admin from base url
     public function getBaseUrl(){
         return str_replace($this->web, "", parent::getBaseUrl());
     }

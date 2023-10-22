@@ -1,7 +1,7 @@
 Options +FollowSymlinks
 RewriteEngine On
 
-# deal with admin first
+# Deal with admin first
 RewriteCond %{REQUEST_URI} ^/(admin) 
 RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
 RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
