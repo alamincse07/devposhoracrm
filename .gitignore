@@ -22,7 +22,7 @@ Thumbs.db
 .history
 **/runtime
 
-**/assets
+**/web/assets
 # composer itself is not needed
 composer.phar
 

@@ -28,6 +28,7 @@ return [
 		'request'=>[
    		 	'class' => 'common\components\Request',
     		'web'=> '/backend/web',
+            'baseUrl'=>'/admin',
     		'adminUrl' => '/admin',
 			'enableCsrfValidation' => false,
 			
@@ -57,14 +58,14 @@ return [
        
 		
 		'urlManager' => [
-        'enablePrettyUrl' => true,
+        'enablePrettyUrl' => false,
         'showScriptName' => false,
 		'baseUrl' => '/admin',
 		
 		],
 		'urlManagerFrontEnd' => [
             'class' => 'yii\web\urlManager',
-            'baseUrl' => '/poshoracrm/frontend/web',
+            'baseUrl' => '/',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],

@@ -19,12 +19,13 @@ return [
 			'baseUrl' => '/advanced',
         ],*/
 		'request'=>[
-   		 	'class' => 'common\components\Request',
-    		'web'=> '/frontend/web'
+            'class' => 'common\components\Request',
+            'web'=> '/frontend/web',
+            'baseUrl' => '',
 		],
         'user' => [
             'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
         'session' => [
@@ -55,6 +56,7 @@ return [
 		'urlManager' => [
         'enablePrettyUrl' => true,
         'showScriptName' => false,
+        
 		],
        
     ],

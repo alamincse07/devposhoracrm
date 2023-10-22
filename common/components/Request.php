@@ -8,7 +8,7 @@ class Request extends \yii\web\Request {
     public $adminUrl;
 
     public function getBaseUrl(){
-        return str_replace($this->web, "", parent::getBaseUrl()) . $this->adminUrl;
+        return str_replace($this->web, "", parent::getBaseUrl());
     }
 
 

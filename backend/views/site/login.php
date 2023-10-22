@@ -33,12 +33,12 @@ $this->params['breadcrumbs'][] = $this->title;
       </div>
       <div class="row">
         <div class="col-xs-8">
-         <? $session = Yii::$app->session; 
-		 if($session->getFlash('loginerror') !=''){?>
+         <?php $session = Yii::$app->session; 
+		 if($session->getFlash('loginerror') !=''){ ?>
          <div class="container-login100-form-btn" style="background-color:#EB6265; color:#FFFFFF; padding:7px;">                            
-               <? echo $session->getFlash('loginerror');?>
+               <?=$session->getFlash('loginerror');?>
 		 </div>
-         <? } ?>
+         <?php } ?>
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
