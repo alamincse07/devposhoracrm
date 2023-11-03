@@ -248,7 +248,7 @@ Highcharts.chart('target', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Total Target: <?=$ttar;?><br>Total Achievement: <?=$tarc?>'
+      text: 'Total Target: <?=@$ttar;?><br>Total Achievement: <?=@$tarc?>'
     }
   },
   tooltip: {

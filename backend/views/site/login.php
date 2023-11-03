@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 $this->title = 'Admin Login';
 $this->params['breadcrumbs'][] = $this->title;
+$formURL=Yii::$app->urlManager->createUrl(['site/login']);
 ?>
 <div class="site-login">
     <div class="row">
@@ -22,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
   <div class="login-box-body">
   <?php /*?>  <p class="login-box-msg">Sign in to start your session</p><?php */?>
 
-    <form action="login" method="post">
+    <form action="<?=$formURL?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Username" name="username" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>

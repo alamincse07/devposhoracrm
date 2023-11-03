@@ -114,7 +114,7 @@ class SiteController extends Controller
 		  
 		  
 		}else{
-			
+
 			if(isset($_REQUEST['login']))
 			{
 				$username = $_REQUEST['username'];
@@ -123,14 +123,14 @@ class SiteController extends Controller
 				$hotjobs = $connection->createCommand("SELECT * FROM user where username='".$username."' and password='".$password."'");
 				$hjs = $hotjobs->queryOne();
 				
-				
+
 				if($hjs)
 				{ 
 					if($hjs['status']==10)
 					{
 						\Yii::$app->session->set('user.username',$username); 
 					
-					//	\Yii::$app->session->set('user.project_id',$hjs['project_id']);
+					   //	\Yii::$app->session->set('user.project_id',$hjs['project_id']);
 						\Yii::$app->session->set('user.user_level',$hjs['user_level']);
 						\Yii::$app->session->set('user.bp_id',$hjs['bp_id']);
 						if($hjs['cso_id'])
